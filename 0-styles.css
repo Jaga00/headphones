@@ -1,0 +1,81 @@
+/* Reset CSS styling */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Use variables */
+  :root {
+    --primary-color: #1e88e5;
+    --header-height: 400px;
+    --hero-padding: 60px;
+  }
+  
+  /* Simple/“as generic as you can” CSS selectors */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    height: var(--header-height);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero {
+    padding: var(--hero-padding);
+  }
+  
+  .logo {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .main-nav ul li {
+    margin-right: 20px;
+  }
+  
+  .main-nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .main-nav ul li a:hover {
+    text-decoration: underline;
+  }
